@@ -40,8 +40,13 @@ export const Form = styled.form`
     border: 0;
     transition: all 0.3s;
 
-    &:hover {
+    &:not(:disabled):hover {
       filter: brightness(0.8);
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
     }
   }
 `;
