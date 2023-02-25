@@ -38,14 +38,14 @@ export const Form = styled.form`
     background-color: ${(props) => props.theme.blue};
     color: ${(props) => props.theme.white};
     border: 0;
-    transition: all 0.3s;
 
     &:not(:disabled):hover {
-      filter: brightness(0.8);
+      filter: brightness(0.9);
+      transition: all 0.3s;
     }
 
     &:disabled {
-      opacity: 0.7;
+      opacity: 0.4;
       cursor: not-allowed;
     }
   }
