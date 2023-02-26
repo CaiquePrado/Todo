@@ -16,13 +16,6 @@ export const TodoItem = styled.div`
     flex: 1;
     line-height: 160%;
   }
-
-  svg {
-    background-color: transparent;
-    color: ${(props) => props.theme.blue};
-    border: 0;
-    cursor: pointer;
-  }
 `;
 
 export const ButtonCheck = styled.button`
@@ -42,5 +35,15 @@ export const ButtonCheck = styled.button`
     width: 100%;
     height: 100%;
     color: #5e60ce;
+  }
+`;
+
+export const DeleteButton = styled.button`
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  svg {
+    color: ${(props) => props.theme.blue};
+    border: 0;
   }
 `;

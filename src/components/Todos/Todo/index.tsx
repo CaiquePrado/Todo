@@ -1,19 +1,22 @@
 import { Trash } from "phosphor-react";
 import { ITask } from "../../../@types/styled";
-import { ButtonCheck, TodoItem } from "./styles";
+import { ButtonCheck, DeleteButton, TodoItem } from "./styles";
 
 interface TodoProps {
   todo: ITask;
+  handleDeleteTask: (todoId: string) => void;
 }
 
-export const Todo = ({ todo }: TodoProps) => {
+export const Todo = ({ todo, handleDeleteTask }: TodoProps) => {
   return (
     <TodoItem>
       <ButtonCheck>
         <div />
       </ButtonCheck>
       <span>{todo.task}</span>
-      <Trash size={24} />
+      <DeleteButton onClick={() => handleDeleteTask(todo.id)}>
+        <Trash size={24} />
+      </DeleteButton>
     </TodoItem>
   );
 };

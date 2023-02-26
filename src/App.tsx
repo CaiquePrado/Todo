@@ -26,11 +26,16 @@ export function App() {
     setTask("");
   };
 
+  const handleDeleteTask = (todoId: string) => {
+    const newTodo = [...todos].filter((todo) => todo.id !== todoId);
+    setTodo(newTodo);
+  };
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Header task={task} setTask={setTask} handleAddTask={handleAddTask} />
       <Scores />
-      <Todos todos={todos} />
+      <Todos todos={todos} handleDeleteTask={handleDeleteTask} />
       <GlobalStyle />
     </ThemeProvider>
   );
