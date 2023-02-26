@@ -30,7 +30,7 @@ export function App() {
     <ThemeProvider theme={defaultTheme}>
       <Header task={task} setTask={setTask} handleAddTask={handleAddTask} />
       <Scores />
-      <Tasks />
+      <Tasks todos={todos} />
       <GlobalStyle />
     </ThemeProvider>
   );

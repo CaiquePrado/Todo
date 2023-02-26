@@ -8,5 +8,7 @@ declare module "styled-components" {
 }
 
 export interface ITask {
-  [newTask: { id: string; task: string; isCompleted: boolean }];
+  id: string;
+  task: string;
+  isCompleted: boolean;
 }
