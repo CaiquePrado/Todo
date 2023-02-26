@@ -12,7 +12,7 @@ export const TasksContainer = styled.main`
   img {
     width: 100%;
     object-fit: cover;
-    margin-top: 4.25rem;
+    margin-top: 4rem;
   }
 `;
 

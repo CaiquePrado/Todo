@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/themes/default";
 
 import { Header } from "./components/Header";
-import { Scores } from "./components/Scores";
+import { Score } from "./components/Score";
 import { Todos } from "./components/Todos";
 
 import { FormEvent, useState } from "react";
@@ -47,7 +47,7 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Header task={task} setTask={setTask} handleAddTask={handleAddTask} />
-      <Scores />
+      <Score todos={todos} />
       <Todos
         todos={todos}
         handleDeleteTask={handleDeleteTask}

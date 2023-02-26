@@ -24,6 +24,7 @@ export const Span = styled.span<SpanProps>`
     props.variant === "done" &&
     css`
       text-decoration: line-through;
+      color: ${(props) => props.theme["gray-200"]};
     `}
 `;
 
