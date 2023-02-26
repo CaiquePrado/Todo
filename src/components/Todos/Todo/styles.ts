@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const TodoItem = styled.div`
   background-color: ${(props) => props.theme["blue-600"]};
@@ -9,13 +9,22 @@ export const TodoItem = styled.div`
   align-items: center;
   height: 4rem;
   gap: 0.75rem;
+`;
 
-  span {
-    font-size: 0.875rem;
-    font-weight: 400;
-    flex: 1;
-    line-height: 160%;
-  }
+interface SpanProps {
+  variant?: "done";
+}
+
+export const Span = styled.span<SpanProps>`
+  font-size: 0.875rem;
+  font-weight: 400;
+  flex: 1;
+  line-height: 160%;
+  ${(props) =>
+    props.variant === "done" &&
+    css`
+      text-decoration: line-through;
+    `}
 `;
 
 export const ButtonCheck = styled.button`
@@ -29,12 +38,12 @@ export const ButtonCheck = styled.button`
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 2px solid #4ea8de;
+    border: 2px solid ${(props) => props.theme.blue};
   }
   svg {
     width: 100%;
     height: 100%;
-    color: #5e60ce;
+    color: ${(props) => props.theme.blue};
   }
 `;
 

@@ -31,11 +31,28 @@ export function App() {
     setTodo(newTodo);
   };
 
+  const handleComletedTodo = (todoId: string) => {
+    const newTodo = [...todos].map((todo) => {
+      if (todo.id === todoId) {
+        return {
+          ...todo,
+          isCompleted: !todo.isCompleted,
+        };
+      }
+      return todo;
+    });
+    setTodo(newTodo);
+  };
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Header task={task} setTask={setTask} handleAddTask={handleAddTask} />
       <Scores />
-      <Todos todos={todos} handleDeleteTask={handleDeleteTask} />
+      <Todos
+        todos={todos}
+        handleDeleteTask={handleDeleteTask}
+        handleComletedTodo={handleComletedTodo}
+      />
       <GlobalStyle />
     </ThemeProvider>
   );

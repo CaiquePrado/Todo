@@ -25,6 +25,12 @@ export const Form = styled.form`
 
     &::placeholder {
       color: ${(props) => props.theme["blue-400"]};
+      font-size: 1rem;
+
+      @media (max-width: 720px) {
+        font-size: 0.875rem;
+        text-align: center;
+      }
     }
   }
 
