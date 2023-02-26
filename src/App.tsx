@@ -4,7 +4,7 @@ import { defaultTheme } from "./styles/themes/default";
 
 import { Header } from "./components/Header";
 import { Scores } from "./components/Scores";
-import { Tasks } from "./components/Tasks";
+import { Todos } from "./components/Todos";
 
 import { FormEvent, useState } from "react";
 import { ITask } from "./@types/styled";
@@ -30,7 +30,7 @@ export function App() {
     <ThemeProvider theme={defaultTheme}>
       <Header task={task} setTask={setTask} handleAddTask={handleAddTask} />
       <Scores />
-      <Tasks todos={todos} />
+      <Todos todos={todos} />
       <GlobalStyle />
     </ThemeProvider>
   );

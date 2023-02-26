@@ -1,22 +1,21 @@
-import { TasksContainer } from "./styles";
+import { TasksContainer, TodoList } from "./styles";
 import Vazio from "../../assets/Vazio.svg";
 import { ITask } from "../../@types/styled";
+import { Todo } from "./Todo";
 
 interface TasksProps {
   todos: ITask[];
 }
 
-export const Tasks = ({ todos }: TasksProps) => {
+export const Todos = ({ todos }: TasksProps) => {
   return (
     <TasksContainer>
       {todos.length > 0 ? (
-        <div>
+        <TodoList>
           {todos.map((todo) => (
-            <ul key={todo.id}>
-              <li>{todo.task}</li>
-            </ul>
+            <Todo key={todo.id} todo={todo} />
           ))}
-        </div>
+        </TodoList>
       ) : (
         <img src={Vazio} alt="/" />
       )}

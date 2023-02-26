@@ -15,3 +15,12 @@ export const TasksContainer = styled.main`
     margin-top: 4.25rem;
   }
 `;
+
+export const TodoList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 46rem;
+`;
