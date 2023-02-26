@@ -8,8 +8,6 @@ interface ScoreProps {
 export const Score = ({ todos }: ScoreProps) => {
   const concluded = [...todos].filter((todo) => todo.isCompleted).length;
 
-  console.log(concluded);
-
   return (
     <ScoreContainer>
       <p>

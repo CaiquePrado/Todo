@@ -6,12 +6,28 @@ import { Header } from "./components/Header";
 import { Score } from "./components/Score";
 import { Todos } from "./components/Todos";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { ITask } from "./@types/styled";
 
 export function App() {
   const [task, setTask] = useState("");
   const [todos, setTodo] = useState<ITask[]>([]);
+
+  const loadTasks = () => {
+    const saved = localStorage.getItem("todo");
+    if (saved) {
+      setTodo(JSON.parse(saved));
+    }
+  };
+
+  useEffect(() => {
+    loadTasks();
+  }, []);
+
+  const setTaskAndSave = (newTodo: ITask[]) => {
+    localStorage.setItem("todo", JSON.stringify(newTodo));
+    setTodo(newTodo);
+  };
 
   const handleAddTask = (e: FormEvent) => {
     e.preventDefault();
@@ -22,13 +38,13 @@ export function App() {
       isCompleted: false,
     };
 
-    setTodo([...todos, newTask]);
+    setTaskAndSave([...todos, newTask]);
     setTask("");
   };
 
   const handleDeleteTask = (todoId: string) => {
     const newTodo = [...todos].filter((todo) => todo.id !== todoId);
-    setTodo(newTodo);
+    setTaskAndSave(newTodo);
   };
 
   const handleComletedTodo = (todoId: string) => {
@@ -41,7 +57,7 @@ export function App() {
       }
       return todo;
     });
-    setTodo(newTodo);
+    setTaskAndSave(newTodo);
   };
 
   return (
