@@ -15,7 +15,7 @@ export const Score = ({ todos }: ScoreProps) => {
       </p>
       <p>
         Concluídas
-        <span>{concluded}</span> de <span>{todos.length}</span>
+        <span>{concluded}</span>
       </p>
     </ScoreContainer>
   );
