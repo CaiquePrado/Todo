@@ -23,9 +23,10 @@
 </h2>
 
 ### Features 
-- [x] Feature 1
-- [x] Feature 2
-- [x] Feature 3
+- [x] Adicionar uma nova tarefa
+- [x] Remover uma tarefa da listagem
+- [x] Marcar e desmarcar uma tarefa como concluída
+- [x] Mostrar o progresso de conclusão das tarefas
 
 <h4  align="left">
 Projeto finalizado ✔
@@ -65,17 +66,17 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 ### 🛠 Tecnologias<a id="tecnologias"></a>
  As seguintes ferramentas foram usadas na construção do projeto:
  
-  - [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
-  - [Node.js](https://nodejs.org/pt-br/)
-  - [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-  - [React](https://reactjs.org/) 
+  - [Vite](https://vitejs.dev/) 
+  - [Typescript](https://www.typescriptlang.org/)
+  - [Phosphor Icons](https://phosphoricons.com/)
+  - [Styled-Components](https://styled-components.com/) 
   
   ### Autor <a id="autor"> </a>
 
 ---
-<a href="https://github.com/Seu-perfil" style="text-decoration: none;">
+<a href="https://github.com/CaiquePrado" style="text-decoration: none;">
 <img style="border-radius: 50%;" src="url-de-alguma-imagem-por-exemplo-do-github"/>
 
 <br />
-<span> Feito com ❤️ por Seu Nome 👋 Entre em contato! </span> 
+<span> Feito por Caique 👋 Entre em contato! </span> 
 </a> 
