@@ -1,20 +1,6 @@
 
 
-<p align="center">
-  <img alt="Licença do Projeto" src="https://img.shields.io/badge/LICENSE-MIT-green"/>
-<p>
 
-
-<p align="center">
- <a href="#computer-sobre">Sobre</a> •
- <a href="#memo-roteiro">Roteiro</a> •
- <a href="#triangular_ruler-status-do-projeto">Status</a> •
- <a href="#movie_camera-demonstração">Demonstração</a> •
- <a href="#dvd-executar-o-projeto">Executar</a> •
-  <a href="#dvd-executar-o-projeto">Design</a> •
- <a href="#hammer-tecnologias">Tecnologias</a> •
- <a href="#boy-autor">Autor</a> 
-</p>
 
 <h2 align="center"><img alt="Imagem do Projeto" id="imagem" title="#Projeto"
  src="/src/assets/todo.png" /> 
