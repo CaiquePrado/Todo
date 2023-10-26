@@ -12,11 +12,13 @@ export const Form = styled.form`
   left: 0;
   right: 0;
   bottom: -1.688rem;
+  align-items: center;
+  justify-content: center;
 
   input {
     flex: 1;
     height: 100%;
-    padding: 0 1rem;
+    padding: 1rem;
     border-radius: 8px;
     font-size: 1rem;
     border: 0;
@@ -40,8 +42,7 @@ export const Form = styled.form`
     display: flex;
     align-items: center;
     height: 100%;
-    width: 100%;
-    justify-content: center;
+    padding: 0 1rem;
     font-weight: 700;
     border-radius: 8px;
     background-color: ${(props) => props.theme.blue};
