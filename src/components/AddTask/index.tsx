@@ -1,3 +1,4 @@
+import { Plus } from "phosphor-react";
 import { Dispatch, FormEvent, SetStateAction } from "react";
 import { Form } from "./styles";
 
@@ -19,7 +20,7 @@ export const AddTask = ({ task, setTask, handleAddTask }: AddTaskProps) => {
         }}
       />
       <button disabled={!task} type="submit">
-        Adicionar
+        <Plus size={20} />
       </button>
     </Form>
   );

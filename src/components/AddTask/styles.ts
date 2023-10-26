@@ -16,7 +16,7 @@ export const Form = styled.form`
   input {
     flex: 1;
     height: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
     border-radius: 8px;
     font-size: 1rem;
     border: 0;
@@ -37,8 +37,11 @@ export const Form = styled.form`
   button {
     font-size: 1rem;
     cursor: pointer;
-    height: 3.25rem;
-    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
     font-weight: 700;
     border-radius: 8px;
     background-color: ${(props) => props.theme.blue};

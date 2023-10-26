@@ -12,6 +12,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: center;
     height: 100%;
+
     gap: 0.4rem;
 
     svg {
