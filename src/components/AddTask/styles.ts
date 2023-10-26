@@ -13,6 +13,10 @@ export const Form = styled.form`
   right: 0;
   bottom: -1.688rem;
 
+  @media (max-width: 720px) {
+    padding: 0 1rem;
+  }
+
   input {
     flex: 1;
     height: 100%;
